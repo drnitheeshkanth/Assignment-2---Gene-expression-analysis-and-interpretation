@@ -1,0 +1,27 @@
+First, download the data to your PC.
+Go to https://gdc.cancer.gov/ to download the TCGA-Invasive Breast Carcinoma PanCancer Atlas.
+Files should be extracted into directories.
+Navigate to the extracted folders in the directory.
+Step 2: Examine Information
+Open data_clinical_patient.txt and read the clinical data.
+Open data_mrna_seq_v2_rsem.txt and read the RNA-seq data.
+From data_cna.txt, read the CNA data.
+Look up the ERBB2 gene in the CNA data.
+Divide the patients into those who have increased ERBB2 and those who don't.
+Add metadata with the ERBB2 status.
+Step 3: Analysis of Differential Expression
+Install and open the package DESeq2.
+RNA-seq data and ERBB2 status are used to create a DESeqDataSet object.
+Carry out the normalization.
+Do an analysis of differential expression.
+List the top genes with differential expression.
+Analyze pathways more thoroughly with clusterProfiler.Obtain transformed expression values stabilized by variance.
+Run a PCA.
+Phase Four: Gene Expression Cluster
+Install the Biobase package and load it.
+From the DESeqDataSet, extract the assay matrix.
+Run a PCA.
+After matrix transposition, carry out hierarchical clustering.
+To create clusters, chop the tree.
+Create a factor out of cut_tree_result.
+Use color clustering to visualize PCA.
